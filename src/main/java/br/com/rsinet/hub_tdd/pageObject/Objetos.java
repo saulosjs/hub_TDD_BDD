@@ -30,6 +30,9 @@ public class Objetos {
 	@FindBy(how = How.NAME, using = "phone_numberRegisterPage")
 	public WebElement telefone;
 
+	@FindBy(how = How.CSS, using = ".sec-view div select")
+	public WebElement pais;
+
 	@FindBy(how = How.NAME, using = "cityRegisterPage")
 	public WebElement cidade;
 
@@ -41,5 +44,11 @@ public class Objetos {
 
 	@FindBy(how = How.NAME, using = "postal_codeRegisterPage")
 	public WebElement postal;
+
+	@FindBy(how = How.CSS, using = ".sec-view div input[type=checkbox]")
+	public WebElement aceita;
+
+	@FindBy(how = How.ID, using = "register_btnundefined")
+	public WebElement registrar;
 
 }
